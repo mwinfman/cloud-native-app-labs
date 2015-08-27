@@ -30,7 +30,7 @@ public class GreetingController {
 		model.addAttribute("msg", "Hello World!!!");
 			
 		String fortuneServiceUrl = fetchFortuneServiceUrl();
-		logger.info("fortune service url: {}", fortuneServiceUrl);
+		logger.debug("fortune service url: {}", fortuneServiceUrl);
 		
 		RestTemplate restTemplate = new RestTemplate();
         String fortune = restTemplate.getForObject(fortuneServiceUrl, String.class);
