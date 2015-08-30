@@ -1,8 +1,6 @@
-server:
-  port: 8080
 spring:
   application:
-    name: greeting
+    name: greeting-service
   cloud:
     config:
       uri: ${vcap.services.config-server.credentials.uri:http://localhost:8888}

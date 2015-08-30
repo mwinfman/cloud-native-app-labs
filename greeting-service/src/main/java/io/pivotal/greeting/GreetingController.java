@@ -27,7 +27,7 @@ public class GreetingController {
 	String getGreeting(Model model){
         
 		logger.debug("Adding greeting");
-		model.addAttribute("msg", "Hello World!!!");
+		model.addAttribute("msg", "Greetings!!!");
 			
 		String fortuneServiceUrl = fetchFortuneServiceUrl();
 		logger.debug("fortune service url: {}", fortuneServiceUrl);

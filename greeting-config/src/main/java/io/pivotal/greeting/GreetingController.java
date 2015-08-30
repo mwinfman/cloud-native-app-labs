@@ -24,7 +24,7 @@ public class GreetingController {
 	@Autowired
 	FortuneService fortuneService;
 	
-	@RequestMapping("/greeting")
+	@RequestMapping("/")
 	String getGreeting(Model model){
 		
 		logger.debug("Adding greeting");
