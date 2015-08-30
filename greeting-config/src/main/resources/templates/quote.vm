@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>Quote: ${quote.text} </p>
+<p>${quote.author}</p>
+<p>This quote originated from ${uri} </p>
+
+</body>
+</html>
