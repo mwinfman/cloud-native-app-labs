@@ -11,7 +11,7 @@
 
 <div class="aligner txt-c" style="padding-top:20%; padding-bottom:20%">
 	<h1 class="aligner-item type-neutral-11 txt-c">${quote.text}</h1>
-	<h1 class="aligner-item type-neutral-11 txt-c">${quote.author}</h1>
+	<h2 class="aligner-item type-neutral-11 txt-c">${quote.author}</h2>
 	<p class="aligner-item type-neutral-11 txt-c">This quote originated from: ${uri} </p>
 
 	#if($fortune)
