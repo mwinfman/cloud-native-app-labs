@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
+ <head>
+    <title>Greetings</title>
+    <link rel="stylesheet" href="/pui-v1.10.0/pivotal-ui.css">
+    <link rel="stylesheet" href="/app.css">
+    
+    <script src="/pui-v1.10.0/pivotal-ui.js"></script>
+  </head>
 <body>
 
+<div class="aligner txt-c" style="padding-top:20%; padding-bottom:20%">
+	<h1 class="aligner-item type-neutral-11 txt-c">${quote.text}</h1>
+	<h1 class="aligner-item type-neutral-11 txt-c">${quote.author}</h1>
+	<p class="aligner-item type-neutral-11 txt-c">This quote originated from: ${uri} </p>
 
-<p>Quote: ${quote.text} </p>
-<p>${quote.author}</p>
-<p>This quote originated from ${uri} </p>
+	#if($fortune)
+	<h1 class="aligner-item type-neutral-11 txt-c">${fortune}</h1>
+	#end
 
+</div>
 </body>
 </html>
