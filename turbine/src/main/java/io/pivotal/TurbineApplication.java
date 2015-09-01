@@ -2,13 +2,15 @@ package io.pivotal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @SpringBootApplication
-@EnableConfigServer
-public class ConfigServer {
+@EnableTurbine
+public class TurbineApplication {
 
+	
     public static void main(String[] args) {
-        SpringApplication.run(ConfigServer.class, args);
+        SpringApplication.run(TurbineApplication.class, args);
     }
+ 
 }

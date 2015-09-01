@@ -23,7 +23,7 @@ public class FortuneService {
 			fortune = "You will be hungry again in one hour.";
 			break;
 		default:
-			fortune = "Today will be awesome day!";
+			fortune = "Today will be an awesome day!";
 			break;
 		}
 		
