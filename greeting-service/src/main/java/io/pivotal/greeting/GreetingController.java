@@ -29,11 +29,9 @@ public class GreetingController {
 		logger.debug("Adding greeting");
 		model.addAttribute("msg", "Greetings!!!");
 			
-		String fortuneServiceUrl = fetchFortuneServiceUrl();
-		logger.debug("fortune service url: {}", fortuneServiceUrl);
 		
 		RestTemplate restTemplate = new RestTemplate();
-        String fortune = restTemplate.getForObject(fortuneServiceUrl, String.class);
+        String fortune = restTemplate.getForObject(fetchFortuneServiceUrl(), String.class);
 
 		logger.debug("Adding fortune");
 		model.addAttribute("fortune", fortune);
@@ -44,7 +42,12 @@ public class GreetingController {
 	
 	private String fetchFortuneServiceUrl() {
 	    InstanceInfo instance = discoveryClient.getNextServerFromEureka("FORTUNE-SERVICE", false);
-	    return instance.getHomePageUrl();
+	    logger.debug("instanceID: {}", instance.getId());
+
+	    String fortuneServiceUrl = instance.getHomePageUrl();
+		logger.debug("fortune service url: {}", fortuneServiceUrl);
+
+	    return fortuneServiceUrl;
 	}	
 	
 }

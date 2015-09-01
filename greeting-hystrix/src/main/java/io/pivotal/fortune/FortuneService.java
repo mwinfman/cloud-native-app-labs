@@ -1,7 +1,5 @@
 package io.pivotal.fortune;
 
-import io.pivotal.greeting.GreetingController;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +22,8 @@ public class FortuneService {
 	
 	@HystrixCommand(fallbackMethod = "defaultFortune")
 	public String getFortune() {
-		String fortuneServiceUrl = fetchFortuneServiceUrl();
-		logger.debug("fortune service url: {}", fortuneServiceUrl);
-
 		RestTemplate restTemplate = new RestTemplate();
-        String fortune = restTemplate.getForObject(fortuneServiceUrl, String.class);
+        String fortune = restTemplate.getForObject(fetchFortuneServiceUrl(), String.class);
 		return fortune;
 	}
 	
@@ -39,8 +34,12 @@ public class FortuneService {
 	
 	private String fetchFortuneServiceUrl() {
 	    InstanceInfo instance = discoveryClient.getNextServerFromEureka("FORTUNE-SERVICE", false);
-	    return instance.getHomePageUrl();
-	}	
-		
+	    logger.debug("instanceID: {}", instance.getId());
+
+	    String fortuneServiceUrl = instance.getHomePageUrl();
+		logger.debug("fortune service url: {}", fortuneServiceUrl);
+
+	    return fortuneServiceUrl;
+	}		
 	
 }
