@@ -16,7 +16,7 @@
 
 0. Completion of the [Spring Cloud Config Lab](https://github.com/pivotal-enablement/lab-instructions/blob/master/spring-cloud-config/pws-lab.md)
 
-OPTIONAL
+OPTIONAL (BUT RECOMMENDED)
 
 0. [SpringSource Tool Suite] (https://spring.io/tools)
 
