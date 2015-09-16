@@ -1,5 +1,7 @@
 ## Lab Requirements
 
+0. Installation of [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
 0. Installation of [Maven](https://maven.apache.org/)
 
 0. Installation and experience with [git](https://git-scm.com/) and [github](https://github.com/)
