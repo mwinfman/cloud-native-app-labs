@@ -1,3 +1,11 @@
-# service-discovery
+# cloud native app labs
 
-Applications facilitating understanding of Spring Cloud Netflix Service Discovery
+Labs written using PWS & Spring Cloud OSS.
+
+Labs:
+
+1. [Spring Cloud Config](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-config/pws-lab.md)
+1. [Spring Cloud Netflix: Service Discovery](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-netflix-service-discovery/pws-lab.md)
+1. [Spring Cloud Netflix: Client Side Load Balancing](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-netflix-client-side-load-balancer/pws-lab.md)
+1. [Spring Cloud Netflix: Declarative Rest](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-netflix-declarative-rest/pws-lab.md)
+1. [Spring Cloud Netflix: Circuit Breaking](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-netflix-circuit-breaking/pws-lab.md)
