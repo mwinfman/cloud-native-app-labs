@@ -43,7 +43,7 @@ $ mvn clean spring-boot:run
 
 ### Setup `greeting-ribbon`
 
-1) Review the the following file: `$CLOUD_NATIVE_APP_LABS_HOME/greeting-ribbon/src/main/java/io/pivotal/greeting/GreetingController.java`.  Notice the `LoadBalancerClient`.  It is client side load balancer.
+1) Review the the following file: `$CLOUD_NATIVE_APP_LABS_HOME/greeting-ribbon/src/main/java/io/pivotal/greeting/GreetingController.java`.  Notice the `LoadBalancerClient`.  It is a client side load balancer.
 
 ```java
 @Controller
@@ -106,7 +106,7 @@ $ mvn clean spring-boot:run
 
 ### Setup `greeting-ribbon-rest`
 
-1) Review the the following file: `$CLOUD_NATIVE_APP_LABS_HOME/greeting-ribbon-rest/src/main/java/io/pivotal/greeting/GreetingController.java`.  Notice the `RestTemplate`.  It is not the usual `RestTemplate`, it is load balanced by Ribbon.
+1) Review the the following file: `$CLOUD_NATIVE_APP_LABS_HOME/greeting-ribbon-rest/src/main/java/io/pivotal/greeting/GreetingController.java`.  Notice the `RestTemplate`.  It is not the usual `RestTemplate`, it is load balanced by Ribbon.  The `@LoadBalanced` annotation is a qualifier to ensure we get the load balanced `RestTemplate` injected.
 
 ```java
 @Controller
@@ -119,6 +119,7 @@ public class GreetingController {
 
 
 	@Autowired
+	@LoadBalanced
 	private RestTemplate restTemplate;
 
 	@RequestMapping("/")
@@ -128,7 +129,7 @@ public class GreetingController {
 		model.addAttribute("msg", "Greetings!!!");
 
 
-        String fortune = restTemplate.getForObject("http://fortune-service", String.class);
+  	String fortune = restTemplate.getForObject("http://fortune-service", String.class);
 
 		logger.debug("Adding fortune");
 		model.addAttribute("fortune", fortune);
