@@ -2,6 +2,8 @@
 
 Labs written using PWS & Spring Cloud OSS.
 
+[Requirements](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/requirements.md)
+
 Labs:
 
 1. [Spring Cloud Config](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-config/pws-lab.md)
