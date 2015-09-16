@@ -6,7 +6,7 @@
 	- [Requirements](#requirements)
 	- [Exercises](#exercises)
 		- [Setup the `app-config` Repo](#setup-the-app-config-repo)
-		- [Clone Applications](#clone-applications)
+		- [Setup the `cloud-native-app-labs` Repo](#setup-the-cloud-native-app-labs-repo)
 		- [`config-server` Setup](#config-server-setup)
 		- [`greeting-config` Setup](#greeting-config-setup)
 		- [Deploy the `config-server` and `greeting-config` apps to PWS](#deploy-the-config-server-and-greeting-config-apps-to-pws)
@@ -36,12 +36,13 @@ $ git clone <Your fork of the app-config repo>
 $ cd app-config
 ```
 
-### Clone Applications
+### Setup the `cloud-native-app-labs` Repo
+1) Fork the labs repo to your account.  Browse to: https://github.com/pivotal-enablement/cloud-native-app-labs.  Then fork the repo.
 
-1) Open a new terminal window.  Clone the following repo.  This contains several applications used to demonstrate cloud native architectures.  Get familiar with the sub directories.
+2) Open a new terminal window.  Clone the following repo.  This contains several applications used to demonstrate cloud native architectures.  Get familiar with the sub directories.
 
 ```bash
-$ git clone https://github.com/pivotal-enablement/cloud-native-app-labs.git
+$ git clone <Your fork of the cloud-native-app-labs repo>
 $ cd cloud-native-app-labs
 ```
 
