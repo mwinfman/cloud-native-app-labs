@@ -29,7 +29,9 @@ To start, we need a repository to hold our configuration.
 1) Fork the configuration repo to your account.  Browse to: https://github.com/pivotal-enablement/app-config.  Then fork the repo.
 ![fork](resources/images/fork.png "fork")
 
-2) Open a new terminal window and clone the fork you just created
+2) GitHub displays your new fork. Copy the HTTPS clone URL from your fork.
+
+3) Open a new terminal window and clone the fork you just created:
 
 ```bash
 $ git clone <Your fork of the app-config repo>
