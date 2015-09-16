@@ -13,7 +13,7 @@
 
 ## Requirements
 
-[Lab Requirements](https://github.com/pivotal-enablement/lab-instructions/blob/master/requirements.md)
+[Lab Requirements](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/requirements.md)
 
 ## Exercises
 
