@@ -41,7 +41,9 @@ $ cd app-config
 ### Setup the `cloud-native-app-labs` Repo
 1) Fork the labs repo to your account.  Browse to: https://github.com/pivotal-enablement/cloud-native-app-labs.  Then fork the repo.
 
-2) Open a new terminal window.  Clone the following repo.  This contains several applications used to demonstrate cloud native architectures.  Get familiar with the sub directories.
+2) GitHub displays your new fork. Copy the HTTPS clone URL from your fork.
+
+3) Open a new terminal window.  Clone the following repo.  This contains several applications used to demonstrate cloud native architectures.  Get familiar with the sub directories.
 
 ```bash
 $ git clone <Your fork of the cloud-native-app-labs repo>
