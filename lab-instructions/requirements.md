@@ -14,8 +14,6 @@
 
 0. [CF CLI](https://console.run.pivotal.io/tools)
 
-0. Completion of the [Spring Cloud Config Lab](https://github.com/pivotal-enablement/cloud-native-app-labs/blob/master/lab-instructions/spring-cloud-config/pws-lab.md)
-
 OPTIONAL (BUT RECOMMENDED)
 
 0. [SpringSource Tool Suite] (https://spring.io/tools)
